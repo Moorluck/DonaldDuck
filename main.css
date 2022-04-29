@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/background.jpg);
+}
+
+h1 {
+    color: goldenrod;
+    text-shadow: 1px 1px 2px gold;
+    text-align: center;
+}
+
+/* .desc {
+    font-weight: bold;
+} */
+
+header p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* h1 + p {
+    font-weight: bold;
+} */
+
+h2 {
+    font-size: 1.5em;
+    background-color: lightyellow;
+    border-bottom: 1px solid gold;
+    text-align: center;
+}
+
+dt {
+    font-style: oblique;
+    color: goldenrod;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 25px;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    padding: 5%;
+}
+
+.top-container {
+    display: flex;
+    margin-bottom: 8%;
+}
+
+header, .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.section-container section {
+    width: 80%;
+}
+
+section {
+    border: 1px solid gold;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .top-container {
+        flex-direction: column;
+    }
+
+    header, .section-container {
+        width: 100%;
+    }
+
+    .section-container section {
+        width: 100%;
+    }
+    header, #section-exp {
+        margin-bottom: 8%;
+    }
+
+    img {
+        width: 60%
+    }
+}
